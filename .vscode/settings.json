@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "cmsis_os.h": "c",
+        "stm32wlxx_it.h": "c",
+        "stm32wlxx_nucleo.h": "c"
+    },
+    "cortex-debug.gdbPath": "/opt/gnu-tools-for-stm32.10.3-2021.10/tools/bin/arm-none-eabi-gdb",
+    // "cortex-debug.stutilPath": "/opt/stlink/st-util",
+    "cortex-debug.stm32cubeprogrammer": "/home/mazzer/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin" 
+}

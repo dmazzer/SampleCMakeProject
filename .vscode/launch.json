@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "projectName": "samplecmakeproject",
+    "configurations": [
+        {
+            "name": "STlink launch",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/samplecmakeproject.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "device": "STM32WL55JC1",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "Build all", // configured in tasks.json
+            // "preLaunchCommands": ["Build all"], // you can execute command instead of task
+            "svdFile": "STM32WL5x_CM4.svd", // Include svd to watch device peripherals
+            "swoConfig": {}, // currently (v1.7.0) not supported
+            "showDevDebugOutput": "raw"
+        },
+        {
+            "name": "STlink attach",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/samplecmakeproject.elf",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "device": "STM32WL55JC1",
+            "interface": "swd",
+            // "runToEntryPoint": "main",
+            "preLaunchTask": "Build all", // configured in tasks.json
+            // "preLaunchCommands": ["Build all"], // you can execute command instead of task
+            "svdFile": "STM32WL5x_CM4.svd", // Include svd to watch device peripherals
+            "swoConfig": {} // currently (v1.7.0) not supported
+        }        
+
+    ]
+}

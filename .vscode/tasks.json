@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build all",
+            "group": "build",
+            "type": "shell",
+            "command": "make",
+            "args": ["all" ,"-j6"]
+        },
+        {
+            "label": "Clean",
+            "group": "build",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"]
+        },
+        {
+            "label": "Flash",
+            "group": "build",
+            "type": "shell",
+            "command": "make",
+            "args": ["-j6", "flash"]
+        }
+
+    ]
+}
